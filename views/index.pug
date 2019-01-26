@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+html(lang="en")
+   head
+      meta(charset="UTF-8")
+      meta(name="viewport", content="width=device-width, initial-scale=1.0")
+      meta(http-equiv="X-UA-Compatible", content="ie=edge")
+      link(rel="stylesheet", href="/css/style.css")
+      title Document
+   body
+      main
+         header
+            h1 File Metadata Microservice
+         .usage
+            h2 Usage:
+            P Just Upload a File...
+            p It will output a json with the filename, size, and mimetype.
+
+         .cart
+            form(action="/api/fileanalyse", method="post", enctype="multipart/form-data")
+               input(type="file", name="upfile")
+               button(type="submit") Upload
+         footer Diego Manjarres      
